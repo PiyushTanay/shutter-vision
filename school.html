@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>sampoorna vidyalaya</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Noto+Serif:ital@1&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin 0px;
+        padding 0px;
+        background: url('school.jpg');
+        background-size: cover;
+    }
+
+    .heading {
+        display:inline-block;
+        text-align: center;
+        margin-left: 290px;
+        margin-top: 1px;
+        font-size: 70px;
+        font-family: 'El Messiri', sans-serif;
+        background: linear-gradient(to right, red, purple);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
+    }
+
+    h1 {
+        float: right;
+        display: inline;
+        margin-top: -580px;
+        margin-right: 355px;
+        letter-spacing: 0.5rem;
+        background-color: black;
+        color: brown;
+    }
+
+    .maindiv {
+        width: 40%;
+        height: 400px;
+        position: absolute;
+        right: 12%;
+        top: 70%;
+        background-image: url("http://www.yogaiya.in/wp-content/uploads/2019/08/GoogleDrive_Kids-Camp-2-.jpg");
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px 5px black;
+        animation: slider 39s infinite linear;
+    }
+
+    @keyframes slider {
+        0% {
+            background-image: url("http://www.yogaiya.in/wp-content/uploads/2019/08/GoogleDrive_Kids-Camp-2-.jpg");
+        }
+
+        35% {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxLkF_8YX4gg8xglP8dnj7fBVXaop3CBzdA&usqp=CAU");
+        }
+
+        75% {
+            background-image: url("https://www.rajputproud.com/wp-content/uploads/2020/09/New-Project-800x445.jpg");
+        }
+    }
+
+    .left {
+        display: inline-block;
+        background-color: rgb(96, 142, 226);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .left img {
+        width: 150px;
+        filter: inert(100%);
+        /* use of filter is to display image if background color and image color are same */
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 75%;
+        margin: 20px 450px;
+    }
+
+    .right {
+        position: absolute;
+        top: 20px;
+        right: 34px;
+        display: inline-block;
+        position: absolute;
+    }
+
+    .navbar {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .active {
+        padding: 5px 8px;
+        width: 150px;
+        font-size: 25px;
+        font-weight: 1000;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: chocolate;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover {
+        text-decoration: solid;
+        color: blue;
+        transform: translate(-50%,-50%);
+    }
+
+    .btn {
+        font-family: 'Noto Serif', serif;
+        margin: 0px 9px;
+        background-color: aquamarine;
+        color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+        color: aliceblue;
+        box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 100px cyan,0 0 200px cyan;
+    }
+
+    .container {
+        text-align: center;
+        border: 2px solid black;
+        margin: 150px 140px;
+        padding: 45px;
+        width: 25%;
+        border-radius: 28px;
+
+    }
+
+    .form-group input {
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 11px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font size: 50px;
+        border-radius: 8px;
+    }
+    h2{
+        font-size:40px;
+        color:red;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://www.designevo.com/res/templates/thumb_small/branch-encircled-book-and-torch-shield.webp"
+                alt="img">
+            <div>Purpose:To nurture</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="" class="active">Contacts</a></li>
+                <li><a href="" class="active"> Admission</a></li>
+                <li><a href="" class="active">Purspose</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Downloads</button>
+            <button class="btn">Mail Us</button>
+        </div>
+    </header>
+    <div class="heading">
+        VANASTHALI VIDYALAYA
+    </div>
+    <div class="container">
+        <h2>Log in:</h2>
+        <form action="notation.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Reg no">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your DOB(dd/mm/yyyy)">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your class&sec(E.g VI'A')">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <h1>PREVIEW:</h1>
+    <div class="maindiv">
+
+    </div>
+    
+</body>
+
+</html>
